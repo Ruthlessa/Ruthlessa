@@ -235,26 +235,38 @@
   </a>&emsp;
   <a href="https://www.buymeacoffee.com/ruthlessa">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>&emsp;
+  <a href="https://paypal.me/ruthlessa">
+    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal" />
   </a>
 </div>
 
-<!-- 微信 / 支付宝收款码（占位，将 src 替换为实际收款码图片链接即可启用） -->
-<!--
 <div>&nbsp;</div>
+
+<!-- 扫码赞助：PayPal 二维码 + 微信赞赏码 -->
 <table>
   <tr>
-    <td align="center">
-      <img src="" alt="微信收款码" width="180" height="180" /><br/>
-      <strong>💚 微信支付</strong>
+    <td align="center" width="320">
+      <div style="border-radius: 14px; background: #00308710; padding: 18px 12px 10px; border: 1px solid #00308730;">
+        <img src="./assets/images/qrcode-paypal.png" alt="PayPal 赞助二维码" width="200" height="200" /><br/>
+        <div style="margin-top: 8px;">
+          <strong style="color: #003087; font-size: 16px;">🌐 PayPal（海外）</strong><br/>
+          <span style="font-size: 12px; color: #666;">扫码或访问 paypal.me/ruthlessa</span>
+        </div>
+      </div>
     </td>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td align="center">
-      <img src="" alt="支付宝收款码" width="180" height="180" /><br/>
-      <strong>💙 支付宝</strong>
+    <td width="40"></td>
+    <td align="center" width="320">
+      <div style="border-radius: 14px; background: #07c16015; padding: 18px 12px 10px; border: 1px solid #07c16035;">
+        <img src="./assets/images/qrcode-wechat-reward.png" alt="微信赞赏码" width="200" height="200" /><br/>
+        <div style="margin-top: 8px;">
+          <strong style="color: #07c160; font-size: 16px;">💚 微信赞赏码（国内）</strong><br/>
+          <span style="font-size: 12px; color: #666;">微信扫描二维码打赏支持</span>
+        </div>
+      </div>
     </td>
   </tr>
 </table>
--->
 
 </div>
 
