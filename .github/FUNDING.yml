@@ -1,11 +1,13 @@
 # GitHub Sponsorship 配置
 # 这些是受支持的赞助平台，配置后 GitHub 仓库页面右侧将显示 "Sponsor" 按钮
 
+# GitHub Sponsors (GitHub 官方赞助)
+github: [Ruthlessa]
+
 # Buy Me a Coffee - 将下方用户名替换为您的实际 Buy Me a Coffee 账号
 buy_me_a_coffee: ruthlessa
 
 # 如需启用其他赞助平台，取消注释并填写对应信息：
-# github: [Ruthlessa]                 # GitHub Sponsors 用户名
 # patreon: ruthlessa                  # Patreon 用户名
 # open_collective: ruthlessa          # Open Collective 项目名
 # ko_fi: ruthlessa                    # Ko-fi 用户名

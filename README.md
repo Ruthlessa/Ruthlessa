@@ -207,26 +207,35 @@
 
 <div align="center">
 
-## ☕ 支持赞助 / Support the Project
+## 💖 赞助支持 / Sponsor Me
 
-<p>如果我的项目和内容对您有帮助，欢迎请我喝杯咖啡！您的支持是我持续创作的动力 ❤️</p>
-<p>If my work has helped you, consider buying me a coffee. Your support keeps me going! ❤️</p>
+<p>如果我的项目和内容对您有帮助，欢迎通过以下方式支持我！每一份鼓励都是我持续创作的动力 ❤️</p>
+<p>If my work has helped you, consider supporting me through the options below. Your generosity keeps me going! ❤️</p>
 
 <div>&nbsp;</div>
 
-<!-- Buy Me a Coffee 按钮 -->
-<a href="https://www.buymeacoffee.com/ruthlessa" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="55" style="height: 55px !important; width: 207px !important;" />
-</a>
+<!-- 赞助按钮组 -->
+<div>
+  <!-- GitHub Sponsors 官方按钮 -->
+  <a href="https://github.com/sponsors/Ruthlessa" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=ffffff" alt="GitHub Sponsors" height="55" style="height: 55px !important; vertical-align: middle;" />
+  </a>&emsp;
+  <!-- Buy Me a Coffee 按钮 -->
+  <a href="https://www.buymeacoffee.com/ruthlessa" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="55" style="height: 55px !important; width: 207px !important; vertical-align: middle;" />
+  </a>
+</div>
 
 <div>&nbsp;</div>
 
 <!-- 赞助徽章 -->
 <div>
+  <a href="https://github.com/sponsors/Ruthlessa">
+    <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsor" />
+  </a>&emsp;
   <a href="https://www.buymeacoffee.com/ruthlessa">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
-  </a>&emsp;
-  <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsor" />
+  </a>
 </div>
 
 <!-- 微信 / 支付宝收款码（占位，将 src 替换为实际收款码图片链接即可启用） -->
