@@ -207,6 +207,52 @@
 
 <div align="center">
 
+## ☕ 支持赞助 / Support the Project
+
+<p>如果我的项目和内容对您有帮助，欢迎请我喝杯咖啡！您的支持是我持续创作的动力 ❤️</p>
+<p>If my work has helped you, consider buying me a coffee. Your support keeps me going! ❤️</p>
+
+<div>&nbsp;</div>
+
+<!-- Buy Me a Coffee 按钮 -->
+<a href="https://www.buymeacoffee.com/ruthlessa" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="55" style="height: 55px !important; width: 207px !important;" />
+</a>
+
+<div>&nbsp;</div>
+
+<!-- 赞助徽章 -->
+<div>
+  <a href="https://www.buymeacoffee.com/ruthlessa">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>&emsp;
+  <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsor" />
+</div>
+
+<!-- 微信 / 支付宝收款码（占位，将 src 替换为实际收款码图片链接即可启用） -->
+<!--
+<div>&nbsp;</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="" alt="微信收款码" width="180" height="180" /><br/>
+      <strong>💚 微信支付</strong>
+    </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td align="center">
+      <img src="" alt="支付宝收款码" width="180" height="180" /><br/>
+      <strong>💙 支付宝</strong>
+    </td>
+  </tr>
+</table>
+-->
+
+</div>
+
+<img width="200%" src="./assets/images/hr.gif" />
+
+<div align="center">
+
 <img width="36%" src="./assets/images/githubgif.gif" />
 
 <table>
