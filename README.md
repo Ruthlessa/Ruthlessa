@@ -248,7 +248,7 @@
   <tr>
     <td align="center" width="320">
       <div style="border-radius: 14px; background: #00308710; padding: 18px 12px 10px; border: 1px solid #00308730;">
-        <img src="./assets/images/qrcode-paypal.png" alt="PayPal 赞助二维码" width="200" height="200" /><br/>
+        <img src="./assets/images/qrcode-paypal.jpg" alt="PayPal 赞助二维码" width="200" height="200" /><br/>
         <div style="margin-top: 8px;">
           <strong style="color: #003087; font-size: 16px;">🌐 PayPal（海外）</strong><br/>
           <span style="font-size: 12px; color: #666;">扫码或访问 paypal.me/ruthlessa</span>
