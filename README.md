@@ -297,10 +297,6 @@
     <td><img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
     <td><img src="./github-metrics/calendar.full.svg" alt="calendar.full" /></td>
   </tr>
-  <tr>
-    <td><img src="./github-metrics/lines.svg" alt="lines" /></td>
-    <td></td>
-  </tr>
 </table>
 
 <img width="120%" src="https://repobeats.axiom.co/api/embed/dd42bad8effa7ab44d2f3124414ee110611e044a.svg" />
