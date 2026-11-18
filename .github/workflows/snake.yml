@@ -1,0 +1,37 @@
+# 此开源项目地址 https://github.com/Platane/snk
+# 生成贡献图贪吃蛇动画（亮/暗两套），供 README 的 picture 标签引用。
+
+name: GitHub Contribution Snake
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 19 * * *" # UTC 19:00 == 北京时间次日 03:00
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Ruthlessa
+          outputs: |
+            profile-snake-contrib/github-contribution-grid-snake.svg
+            profile-snake-contrib/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile-snake-contrib/
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: update contribution snake"
+          git push

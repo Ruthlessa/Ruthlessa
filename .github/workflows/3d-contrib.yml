@@ -1,0 +1,36 @@
+# 此开源项目地址 https://github.com/yoshi389111/github-profile-3d-contrib
+# 默认生成 profile-3d-contrib/ 下的 10 个 SVG，与 README 引用的文件名一致。
+
+name: GitHub Profile 3D Contrib
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # UTC 18:30 == 北京时间次日 02:30
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Ruthlessa
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile-3d-contrib/
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: update profile 3d contrib"
+          git push
