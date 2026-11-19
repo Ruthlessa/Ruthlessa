@@ -31,25 +31,11 @@ jobs:
           plugin_traffic: yes
           plugin_introduction: yes
           plugin_gists: yes
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
-      # 👨‍💻 Lines of code changed
-      # 单独一步并容错：plugin_lines 若因 API 限流报错，lowlighter/metrics 的
-      # classic/partials/lines.ejs 第 1 行会因缺少可选链而崩溃（v3.34 与 master 均未修复），
-      # continue-on-error 可避免它把整个工作流和 base.svg 一起带崩。
-      - name: lines
-        continue-on-error: true
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: github-metrics/lines.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Ruthlessa
-          template: classic
-          config_timezone: Asia/Shanghai
-          base: ""
-          plugin_lines: yes
-          plugin_lines_sections: repositories, history
-          plugin_errors_fatal: no
+      # 已移除 "lines" 步骤：plugin_lines 在 API 限流时会让 v3.34 模板
+      # classic/partials/lines.ejs 第 1 行崩溃（缺少可选链，上游未修复），
+      # 导致整个 job 失败；且 README 并未引用 lines.svg。
 
       # 📅 Isometric commit calendar
       - name: Full-year calendar
@@ -60,7 +46,7 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 🈷️ Languages activity
       - name: Indepth analysis
@@ -77,7 +63,7 @@ jobs:
           plugin_languages_details: lines, bytes-size
           plugin_languages_limit: 4
           plugin_languages_analysis_timeout: 15
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # ✨ Stargazers
       - name: Using chartist charts
@@ -88,7 +74,7 @@ jobs:
           base: ""
           plugin_stargazers: yes
           plugin_stargazers_charts_type: chartist
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 🌟 Recently starred repositories
       - name: Recently starred
@@ -99,7 +85,7 @@ jobs:
           base: ""
           plugin_stars: yes
           plugin_stars_limit: 10
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 🎟️ Follow-up of issues and pull requests
       - name: Indepth analysis
@@ -110,7 +96,7 @@ jobs:
           base: ""
           plugin_followup: yes
           plugin_followup_indepth: yes
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 🎭 Comment reactions
       - name: Comment reactions
@@ -122,7 +108,7 @@ jobs:
           plugin_reactions: yes
           plugin_reactions_limit: 100
           plugin_reactions_details: percentage
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 🧑‍🤝‍🧑 People
       - name: Followers
@@ -135,7 +121,7 @@ jobs:
           plugin_people_limit: 300
           plugin_people_size: 36
           plugin_people_types: followers, following
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 📓 Featured repositories
       - name: Pinned repositories
@@ -146,7 +132,7 @@ jobs:
           base: ""
           plugin_repositories: yes
           plugin_repositories_pinned: 2
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 💬 Discussions
       - name: GitHub Discussions
@@ -157,7 +143,7 @@ jobs:
           base: ""
           plugin_discussions: yes
           plugin_discussions_categories_limit: 8
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # 📆 Commit calendar
       - name: Full history calendar
@@ -168,7 +154,7 @@ jobs:
           base: ""
           plugin_calendar: yes
           plugin_calendar_limit: 0
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
 
       # ️ Stack Overflow
       - name: Top answers from stackoverflow
@@ -181,4 +167,4 @@ jobs:
           plugin_stackoverflow_user: 1
           plugin_stackoverflow_sections: answers-top
           plugin_stackoverflow_limit: 2
-          plugin_errors_fatal: no
+          plugins_errors_fatal: no
